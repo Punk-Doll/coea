@@ -78,16 +78,13 @@ public class Employee {
             this.end_date = request.end_date();
         }
         if(request.phone() != null){
-            this.register = request.phone();
+            this.phone = request.phone();
         }
         if(request.email() != null){
-            this.register = request.email();
+            this.email = request.email();
         }
         if(request.unit() != null){
             this.unit = request.unit();
-        }
-        if(request.cost_center() != null){
-            this.cost_center = request.cost_center();
         }
         if(request.cost_center() != null){
             this.cost_center = request.cost_center();

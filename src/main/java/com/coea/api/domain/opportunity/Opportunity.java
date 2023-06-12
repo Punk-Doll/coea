@@ -1,7 +1,5 @@
 package com.coea.api.domain.opportunity;
 
-import com.coea.api.domain.employee.DataEmployee;
-import com.coea.api.domain.employee.UpdateDataEmployee;
 import jakarta.persistence.*;
 import lombok.AllArgsConstructor;
 import lombok.EqualsAndHashCode;
