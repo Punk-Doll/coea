@@ -53,28 +53,55 @@ public class Project {
 
     }
 
-//    public void updateDataFeedback(UpdateDataFeedback feedback) {
-//        if(feedback.name_employee() != null){
-//            this.name_employee = feedback.name_employee();
-//        }
-//        if(feedback.skill_employee() != null){
-//            this.skill_employee = feedback.skill_employee();
-//        }
-//        if(feedback.pep() != null){
-//            this.pep = feedback.pep();
-//        }
-//        if(feedback.manager() != null){
-//            this.manager = feedback.manager();
-//        }
-//        if(feedback.feedback_date() != null){
-//            this.feedback_date = feedback.feedback_date();
-//        }
-//        if(feedback.feedback() != null){
-//            this.feedback = feedback.feedback();
-//        }
-//        if(feedback.employee_score() != null){
-//            this.employee_score = feedback.employee_score();
-//        }
-//    }
+    public void updateDataProject(UpdateDataProject project) {
+        if(project.proposal() != null){
+            this.proposal = project.proposal();
+        }
+        if(project.pep() != null){
+            this.pep = project.pep();
+        }
+        if(project.describe_project() != null){
+            this.describe_project = project.describe_project();
+        }
+        if(project.start_date() != null){
+            this.start_date = project.start_date();
+        }
+        if(project.start_end() != null){
+            this.start_end = project.start_end();
+        }
+        if(project.amount_hours() != null){
+            this.amount_hours = project.amount_hours();
+        }
+        if(project.amount_hours_profile() != null){
+            this.amount_hours_profile = project.amount_hours_profile();
+        }
+        if(project.hours_month() != null){
+            this.hours_month = project.hours_month();
+        }
+        if(project.hours_month_profile() != null){
+            this.hours_month_profile = project.hours_month_profile();
+        }
+        if(project.score_profile() != null){
+            this.score_profile = project.score_profile();
+        }
+        if(project.final_estimate() != null){
+            this.final_estimate = project.final_estimate();
+        }
+        if(project.final_estimate_profile() != null){
+            this.final_estimate_profile = project.final_estimate_profile();
+        }
+        if(project.score_project() != null){
+            this.score_project = project.score_project();
+        }
+        if(project.responsible_project() != null){
+            this.responsible_project = project.responsible_project();
+        }
+        if(project.manager_client() != null){
+            this.manager_client = project.manager_client();
+        }
+        if(project.active_revenue() != null){
+            this.active_revenue = project.active_revenue();
+        }
+    }
 
 }

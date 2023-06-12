@@ -2,6 +2,8 @@ package com.coea.api.controller;
 
 import com.coea.api.domain.feedback.DataDetailsFeedback;
 import com.coea.api.domain.feedback.DataListFeedback;
+import com.coea.api.domain.opportunity.DataDetailsOpportunity;
+import com.coea.api.domain.opportunity.UpdateDataOpportunity;
 import com.coea.api.domain.project.*;
 import jakarta.validation.Valid;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -36,6 +38,14 @@ public class ProjectController {
     @GetMapping("/{id}")
     public ResponseEntity getProjectById(@PathVariable Long id){
         var project = repository.getReferenceById(id);
+        return ResponseEntity.ok(new DataDetailsProject(project));
+    }
+
+    @PutMapping
+    @Transactional
+    public ResponseEntity updateProject(@RequestBody @Valid UpdateDataProject request){
+        var project = repository.getReferenceById(request.id());
+        project.updateDataProject(request);
         return ResponseEntity.ok(new DataDetailsProject(project));
     }
 
