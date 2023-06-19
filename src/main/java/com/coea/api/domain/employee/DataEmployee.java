@@ -6,7 +6,6 @@ import jakarta.validation.constraints.NotBlank;
 public record DataEmployee(
         @NotBlank
         String start_date,
-        @NotBlank
         String end_date,
         @NotBlank(message = "Register é obrigatório")
         String register,
@@ -18,7 +17,7 @@ public record DataEmployee(
         String email,
         @NotBlank
         String gender,
-        @NotBlank
+        @NotBlank       
         String skill,
         @NotBlank
         String employee_position,

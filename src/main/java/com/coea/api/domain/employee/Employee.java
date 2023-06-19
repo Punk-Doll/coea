@@ -74,6 +74,10 @@ public class Employee {
     }
 
     public void updateDataEmployee(UpdateDataEmployee request) {
+
+        if(request.employee_name() != null){
+            this.employee_name = request.employee_name();
+        }
         if(request.end_date() != null){
             this.end_date = request.end_date();
         }

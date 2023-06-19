@@ -39,10 +39,10 @@ public class EmployeeController {
 
     @PutMapping
     @Transactional
-    public ResponseEntity updateEmployee(@RequestBody @Valid UpdateDataEmployee request){
+    public void updateEmployee(@RequestBody @Valid UpdateDataEmployee request){
         var employee = repository.getReferenceById(request.id());
         employee.updateDataEmployee(request);
-        return ResponseEntity.ok(new DataDetailsEmployee(employee));
+//        return ResponseEntity.ok(new DataDetailsEmployee(employee));
     }
 
     @DeleteMapping("/{id}")
