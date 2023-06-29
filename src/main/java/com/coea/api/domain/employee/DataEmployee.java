@@ -10,7 +10,7 @@ public record DataEmployee(
         @NotBlank(message = "Register é obrigatório")
         String register,
         @NotBlank
-        String employee_name,
+        String name,
         @NotBlank
         String phone,
         @NotBlank @Email(message = "{email.invalido}")
@@ -20,7 +20,7 @@ public record DataEmployee(
         @NotBlank       
         String skill,
         @NotBlank
-        String employee_position,
+        String position,
         @NotBlank
         String location,
         @NotBlank
@@ -31,8 +31,6 @@ public record DataEmployee(
         String project_manager,
         String squad,
         String last_review_score,
-        String date_last_feedback,
-        String feedback,
         String start_date_vacation,
         String end_date_vacation,
         String date_order_promotion,

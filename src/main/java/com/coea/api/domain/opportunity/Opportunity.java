@@ -25,9 +25,7 @@ public class Opportunity {
     private String grade;
     private String requirements;
     private String status;
-    private String candidate;
     private String manager;
-    private String curriculum;
 
 
     public Opportunity(DataOpportunity opportunity) {
@@ -39,9 +37,7 @@ public class Opportunity {
         this.grade = opportunity.grade();
         this.requirements = opportunity.requirements();
         this.status = opportunity.status();
-        this.candidate = opportunity.candidate();
         this.manager = opportunity.manager();
-        this.curriculum = opportunity.curriculum();
     }
 
     public void updateDataOpportunity(UpdateDataOpportunity request) {
@@ -69,14 +65,8 @@ public class Opportunity {
         if(request.status() != null){
             this.status = request.status();
         }
-        if(request.candidate() != null){
-            this.candidate = request.candidate();
-        }
         if(request.manager() != null){
             this.manager = request.manager();
-        }
-        if(request.curriculum() != null){
-            this.curriculum = request.curriculum();
         }
     }
 }

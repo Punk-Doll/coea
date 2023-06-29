@@ -10,9 +10,7 @@ public record UpdateDataOpportunity(@NotNull Long id, String title,
                                     String grade,
                                     String requirements,
                                     String status,
-                                    String manager,
-                                    String candidate,
-                                    String curriculum
+                                    String manager
 
 ) {
 }

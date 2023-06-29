@@ -20,9 +20,6 @@ public record DataOpportunity(
         @NotBlank
         String status,
         @NotBlank
-        String manager,
-        @NotBlank
-        String candidate,
-        String curriculum
+        String manager
         ) {
 }

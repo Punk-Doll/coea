@@ -19,12 +19,12 @@ public class Employee {
     private String start_date;
     private String end_date;
     private String register;
-    private String employee_name;
+    private String name;
     private String phone;
     private String email;
     private String gender;
     private String skill;
-    private String employee_position;
+    private String position;
     private String location;
     private String unit;
     private String cost_center;
@@ -35,8 +35,6 @@ public class Employee {
     private String project_manager;
     private String squad;
     private String last_review_score;
-    private String date_last_feedback;
-    private String feedback;
     private String start_date_vacation;
     private String end_date_vacation;
     private String date_order_promotion;
@@ -48,12 +46,12 @@ public class Employee {
         this.start_date = employee.start_date();
         this.end_date = employee.end_date();
         this.register = employee.register();
-        this.employee_name = employee.employee_name();
+        this.name = employee.name();
         this.phone = employee.phone();
         this.email = employee.email();
         this.gender = employee.gender();
         this.skill = employee.skill();
-        this.employee_position = employee.employee_position();
+        this.position = employee.position();
         this.location = employee.location();
         this.unit = employee.unit();
         this.cost_center = employee.cost_center();
@@ -63,8 +61,6 @@ public class Employee {
         this.project_manager = employee.project_manager();
         this.squad = employee.squad();
         this.last_review_score = employee.last_review_score();
-        this.date_last_feedback = employee.date_last_feedback();
-        this.feedback = employee.feedback();
         this.start_date_vacation = employee.start_date_vacation();
         this.end_date_vacation = employee.end_date_vacation();
         this.date_order_promotion = employee.date_order_promotion();
@@ -75,8 +71,8 @@ public class Employee {
 
     public void updateDataEmployee(UpdateDataEmployee request) {
 
-        if(request.employee_name() != null){
-            this.employee_name = request.employee_name();
+        if(request.name() != null){
+            this.name = request.name();
         }
         if(request.end_date() != null){
             this.end_date = request.end_date();

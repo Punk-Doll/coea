@@ -5,7 +5,7 @@ import jakarta.validation.constraints.NotNull;
 public record UpdateDataEmployee(
         @NotNull Long id,
 
-        String employee_name,
+        String name,
         String end_date,
         String phone,
         String email,

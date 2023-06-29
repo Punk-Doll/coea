@@ -12,11 +12,10 @@ public record DataDetailsOpportunity(
         String grade,
         String requirements,
         String status,
-        String manager,
-        String candidate) {
+        String manager) {
 
 
     public DataDetailsOpportunity(Opportunity opportunity){
-        this(opportunity.getId(), opportunity.getTitle(), opportunity.getProject_name(), opportunity.getProject_describe(), opportunity.getR2D2(), opportunity.getLocation(), opportunity.getGrade(), opportunity.getRequirements(), opportunity.getStatus(), opportunity.getManager(), opportunity.getCandidate());
+        this(opportunity.getId(), opportunity.getTitle(), opportunity.getProject_name(), opportunity.getProject_describe(), opportunity.getR2D2(), opportunity.getLocation(), opportunity.getGrade(), opportunity.getRequirements(), opportunity.getStatus(), opportunity.getManager());
     }
 }
